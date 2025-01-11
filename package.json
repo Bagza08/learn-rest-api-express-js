@@ -1,0 +1,36 @@
+{
+  "name": "learn-rest-api-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/dotenv": "^8.2.3",
+    "@types/express": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
+    "eslint": "^9.17.0",
+    "eslint-config-import": "^0.13.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "globals": "^15.14.0",
+    "nodemon": "^3.1.9",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.19.1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "scripts": {
+    "start": "npx tsc -W",
+    "dev": "npx nodemon",
+    "lint:fix": "npx eslint ./src --ext .ts --fix",
+    "build": "tsc && cp .env ./build/.env",
+    "prod": "node ./build/index.js"
+  }
+}
