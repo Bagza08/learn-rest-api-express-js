@@ -1,5 +1,5 @@
 import express, {
-  NextFunction,
+  type NextFunction,
   type Application,
   type Request,
   type Response
